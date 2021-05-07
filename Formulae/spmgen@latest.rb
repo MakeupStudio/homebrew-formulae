@@ -7,11 +7,11 @@ class SPMGenATLatest < Formula
     depends_on :xcode => ["12.4", :build]
 
     def install
-        system "swift build -c release --disable-sandbox --build-path '.build'"
-        bin.install ".build/release/spmgen"
+      system "swift build -c release --disable-sandbox --build-path '.build'"
+      bin.install ".build/release/spmgen"
     end
 
     test do
-        system "#{bin}/spmgen --version"
+      system "#{bin}/spmgen --version"
     end
 end
