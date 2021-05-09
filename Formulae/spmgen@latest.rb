@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class SPMGen < Formula
   desc "Resources boilerplate code generator for Swift"
   homepage "https://github.com/makeupstudio/spmgen"
