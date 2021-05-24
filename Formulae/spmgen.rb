@@ -9,7 +9,7 @@ class Spmgen < Formula
   depends_on xcode: ["12.4", :build]
 
   def install
-    system `"make", "build"`
+    system `"make" "build"`
     bin.install ".build/release/spmgen"
   end
 
