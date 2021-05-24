@@ -10,7 +10,7 @@ class Spmgen < Formula
 
   def install
     system `"make", "build"`
-    system `"make", "install_bin"`
+    bin.install ".build/release/spmgen"
   end
 
   test do
