@@ -10,7 +10,7 @@ class Spmgen < Formula
 
   def install
     system `"swift" "package" "update"`
-    system `"swift" "build" "-c" "release" "--disable-sandbox" "--build-path" .build`
+    system `"swift" "build" "-c" "release" "--build-path" .build`
     bin.install ".build/release/spmgen"
   end
 
