@@ -9,6 +9,7 @@ class Spmgen < Formula
   depends_on xcode: ["12.5", :build]
 
   def install
+    system "swift", "package", "clean"
     system "swift", "build", "--product", "spmgen", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/spmgen"
   end
