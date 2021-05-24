@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SpmgenATlatest < Formula
+class Spmgen < Formula
   desc "Resources boilerplate code generator for Swift"
   homepage "https://github.com/makeupstudio/spmgen"
   url "https://github.com/makeupstudio/spmgen.git", branch: "main"
