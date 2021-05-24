@@ -9,7 +9,8 @@ class Spmgen < Formula
   depends_on xcode: ["12.4", :build]
 
   def install
-    system `"make", "install"`
+    system `"make", "build"`
+    system `"make", "install_bin"`
   end
 
   test do
