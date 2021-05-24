@@ -6,11 +6,11 @@ class Spmgen < Formula
   url "https://github.com/makeupstudio/spmgen.git", branch: "main"
   version "latest"
 
-  depends_on xcode: ["12.4", :build]
+  depends_on xcode: ["12.5", :build]
 
   def install
     system `"swift" "package" "clean"`
-    system `"swift" "build" "-c" "release" "--build-path" .build`
+    system `"swift" "build" "-c" "release" "--disable-sandbox" "--build-path" .build`
     bin.install ".build/release/spmgen"
   end
 
